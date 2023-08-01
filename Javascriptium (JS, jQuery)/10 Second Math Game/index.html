@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Second Math Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;600;700&display=swap" rel="stylesheet"
+    as="style">
+</head>
+
+<body>
+  <section id="container">
+    <div id="game-container">
+      <h1><span id="title">10 Second</span>&nbsp;Math Game</h1>
+      <p id="time-display">Time remaining: <span id="time-left"></span></p>
+
+      <h3 id="selector-title">Select question type:</h3>
+      <label for="addition" class="question-selector">
+        <input type="checkbox" id="addition" class="selector" name="questionType" value="addition" checked>
+        Addition</label>
+
+      <label for="subtraction" class="question-selector">
+        <input type="checkbox" id="subtraction" class="selector" name="questionType" value="subtraction" checked>
+        Subtraction</label>
+
+      <label for="multiplication" class="question-selector">
+        <input type="checkbox" id="multiplication" class="selector" name="questionType" value="multiplication">
+        Multiplication</label>
+
+      <label for="division" class="question-selector">
+        <input type="checkbox" id="division" class="selector" name="questionType" value="division">
+        Division</label>
+
+      <label for="number-limit" class="number-limit-label">Number Limit:
+        <input type="range" name="numberLimit" min="10" max="50" value="10" class="number-limit-slider"
+          id="number-limit">
+        <span id="chosen-number-limit">10</span>
+      </label>
+
+      <h2 id="equation"></h2>
+      <div class="text-input-wrapper">
+        <input placeholder="Your Answer" type="number" id="user-input">
+      </div>
+      <div class="scores-wrapper">
+        <h4 id="score-wrapper">Score: <span id="score">0</span></h4>
+        <h4 id="high-score-wrapper"><span>High</span> Score: <span id="high-score">0</span></h4>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
