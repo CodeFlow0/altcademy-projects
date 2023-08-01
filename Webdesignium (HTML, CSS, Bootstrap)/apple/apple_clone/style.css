@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+/*               End of Setup             */
+
+/* General styling */
+body {
+  font-family: "Myriad Set Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  color: #333333;
+}
+
+/* Navbar styling */
+nav {
+  background-color: #333333;
+  padding: 0 10%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  color: #fdfdfd;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Hero styling */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: .3em;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: .8em;
+}
+
+.hero-txt {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  height: 400px;
+  background: no-repeat bottom/120% url(./images/hero_iphone_13pro.jpg)
+}
+
+.hero-btn {
+  font-size: 1.5rem;
+  color: #4bacd0;
+}
+
+.left {
+  margin-right: .5em;
+}
+
+.right {
+  margin-left: .5em;
+}
+
+/* Sub-hero styling */
+
+.sub-imgs {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-imgs>img {
+  object-fit: cover;
+  width: 25%;
+  height: 200px;
+}
+
+#recall-link {
+  color: #4bacd0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f2f2f2;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #26292b;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3em 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  color: #848484;
+}
+
+.education-links {
+  margin-bottom: 2em;
+}
+
+.account-links {
+  margin-bottom: 2em;
+}
+
+.footer-bottom {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-bottom: 1em;
+}
+
+.more-info {
+  /* margin: 0 15em 0 15em; */
+  padding-bottom: 1em;
+  border-bottom: 1px solid #848484;
+}
+
+.more-info>p {
+  color: #848484;
+  font-weight: 400;
+}
+
+.more-info>p>a {
+  color: #4bacd0;
+}
+
+.policy {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.policy>ul {
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.policy>p {
+  color: #848484;
+  font-weight: 400;
+  margin-right: 2em;
+}
+
+.policy-link {
+  color: #26292b;
+  font-size: 1.1rem;
+}
+
+.border {
+  border-left: 1px solid #848484;
+  padding-left: 2em;
+  padding-right: 1.5em;
+}
+
+.location {
+  display: flex;
+  margin-left: auto;
+}
+
+.location>p {
+  color: #848484;
+  font-weight: 400;
+}

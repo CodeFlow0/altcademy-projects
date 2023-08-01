@@ -1,0 +1,165 @@
+html {
+  font-size: 10px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: black;
+}
+
+h1 {
+  margin: 2rem 0 1rem 0;
+}
+
+h2 {
+  margin: 2rem 0 1rem 0;
+}
+
+h4 {
+  margin: 4rem 0 2rem 0;
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.sidebar-articles {
+  text-transform: capitalize;
+  color: red;
+  list-style: square;
+  list-style-position: inside;
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  margin-right: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+span {
+  color: black;
+  font-weight: 600;
+}
+
+button {
+  display: block;
+  margin: 3rem auto 3rem auto;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  color: red;
+  border: 2px solid red;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+button:hover {
+  background: red;
+  color: white;
+  transition: .25s ease-in-out;
+}
+
+button:focus {
+  background: red;
+  color: white;
+  transition: .25s ease-in-out;
+}
+
+.main-article {
+  margin: 0 -15px 0 -15px;
+  position: relative;
+}
+
+/* .textbox-main {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0 3rem 0;
+  border-top: 5px solid red;
+  background: linear-gradient(180deg, grey, white 45%)
+} */
+
+.textbox-main {
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  border-top: 5px solid red;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), white 45%);
+}
+
+@media only screen and (min-width: 992px) {
+  .textbox-main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 5px solid red;
+  }
+}
+
+.textbox-main>h2 {
+  color: red;
+}
+
+.textbox-2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 25rem 0;
+}
+
+.textbox-3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 25rem 0;
+  background-color: rgba(173, 216, 230, .5);
+}
+
+.textbox-3>h3 {
+  color: darkcyan;
+}
+
+@media only screen and (max-width: 991px) {
+
+  h4 {
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+    padding: 1.5rem 20rem;
+  }
+}

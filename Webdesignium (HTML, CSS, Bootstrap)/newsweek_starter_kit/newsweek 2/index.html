@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsweek</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/sidebar.css" rel="stylesheet">
+</head>
+
+<!-- Body -->
+
+<body>
+  <!-- Navbar -->
+  <nav class="topnav navbar navbar-inverse navbar-static-top" role="navigation" id="main-nav">
+    <div class="container-fluid">
+      <div class="navbar-header hidden-xs">
+        <a href="#" class="pull-left">
+          <img class="visible-sm visible-lg" src="images/logo/logo_lg.svg" alt="">
+          <img class="visible-md" src="images/logo/logo-sm.svg" alt="">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-left nav-items visible-md visible-lg">
+        <li><a href="#">U.S.</a></li>
+        <li><a href="#">WORLD</a></li>
+        <li><a href="#">BUSINESS</a></li>
+        <li><a href="#">TECH & SCIENCE</a></li>
+        <li><a href="#" class="glyphicon glyphicon-search"></a></li>
+      </ul>
+      <div id="navbar" class="navbar-collapse collapse">
+        <a href="#" class="pull-left">
+          <img class="visible-xs" src="images/logo/logo-sm.svg" alt="">
+        </a>
+        <!-- Smaller Screen Nav Bar -->
+        <ul class="nav navbar-nav navbar-right hidden-lg hidden-md">
+          <li class="divider-vertical"></li>
+          <li class="dropdown dropdown-style">
+            <a href="#" id="search-box" class="dropdown-toggle glyphicon glyphicon-search" data-toggle="dropdown"></a>
+            <div class="banner-width-set">
+            </div>
+          </li>
+          <li class="divider-vertical"></li>
+          <li class="dropdown dropdown-style-sm-hamburger">
+            <a href="#" id="hamburger" class="dropdown-toggle glyphicon glyphicon-menu-hamburger"
+              data-toggle="dropdown"></a>
+            <div class="banner-width-set">
+            </div>
+          </li>
+        </ul>
+        <!-- lg Screen Nav Bar -->
+        <ul class="nav navbar-nav navbar-right visible-lg visible-md">
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a href="#" id="circular-image" class="dropdown-toggle" data-toggle="dropdown">
+              <div class="banner-subscribe-to">
+                <div class="wrapper">
+                  <p><img class="img-circle" src="images/navbar/nav-bar-img.jpg">
+                    <span>Subscribe <br> To Newsweek</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="divider-vertical"></li>
+          <li class="dropdown dropdown-style">
+            <a href="#" id="map-marker" class="dropdown-toggle glyphicon glyphicon-map-marker"
+              data-toggle="dropdown"></a>
+          </li>
+          <li class="divider-vertical"></li>
+          <li><a href="#">Sign In</a>
+            <div class="banner-sign-in">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid main-content">
+    <div class="row">
+
+      <!-- Articles -->
+      <div class="col-xs-12 col-md-9">
+        <div class="main-article">
+          <!-- main article -->
+          <img class="img-responsive" src=".\images\main\main_main.jpg" alt="Video camera">
+          <div class="textbox-main">
+            <h2>U.S.</h2>
+            <h1>justice dept. to force reforms</h1>
+            <p>"The residents of Ferguson have waited nearly a year for their city to adopt an agreement."</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- small articles -->
+          <div class="col-xs-12 col-sm-6">
+            <div>
+              <!-- second article -->
+              <img class="img-responsive" src="./images/main/main1.png" alt="Man floating in car in water">
+              <div class="textbox-2">
+                <h3>U.S.</h3>
+                <h2>gravitational waves detected,<br> proving einstein right</h2>
+                <p>"This [was] truly a scientific moon shot, and we landed on the moon."</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div>
+              <!-- third article -->
+              <img class="img-responsive" src="./images/main/main2.jpg" alt="Man floating in car in water">
+              <div class="textbox-3">
+                <h3>sponsor insight</h3>
+                <h2>the best universities of asia</h2>
+                <p>"Universities from Asia and Europe are challenging the best schools in the USA. When it comes
+                  to<br>choosing the right school then, the options have never been more diverse..."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-xs-12 col-md-3">
+        <div>
+          <!-- side bar -->
+          <h4>latest headlines</h4>
+          <ul>
+            <li class="sidebar-articles"><span>harriet harman: the new law on gender pay was labour's</span></li>
+            <li class="sidebar-articles"><span>french court will hear facebook nude painting case</span></li>
+            <li class="sidebar-articles"><span>rolf harris faces seven indecent assault charges</span></li>
+            <li class="sidebar-articles"><span>U.K. airbnb host rejects israeli for 'occupying lands'</span></li>
+            <li class="sidebar-articles"><span>watch: real madrid's pepe gets into valentine's spirit</span></li>
+            <li class="sidebar-articles"><span>indonesia blocking gay emojis from facebook, whatsapp</span></li>
+            <li class="sidebar-articles"><span>mourhino and woodward 'cannot have spoken' - van gaal</span></li>
+            <li class="sidebar-articles"><span>rwanda to relocate burundian refugees</span></li>
+          </ul>
+          <button>See All Headlines</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
