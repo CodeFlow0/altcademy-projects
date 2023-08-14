@@ -1,0 +1,11 @@
+body {
+  height: 200vh;
+}
+
+.scrollbar {
+  position: fixed;
+  background: #fff;
+  padding: 3rem;
+  right: 0;
+  top: 0;
+}
